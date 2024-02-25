@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  product_db:
+    container_name: product_db
+    image: mysql:8.0.32
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_DATABASE: alten_product
+    ports:
+      - "3388:3306"
