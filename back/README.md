@@ -15,7 +15,7 @@ La base de données est maintenant active avec les données implémentées via l
 
 ### Tests
 
-Les tests des services ont été effectués dans la classe **ProductServiceTests** présent dans le dossier "test". 
+Les tests unitaires des services ont été effectués dans la classe **ProductServiceTests** présent dans le dossier "test". 
 De plus, les endpoints ont été testés à l'aide de Postman.
 Le fichier Postman est disponible dans le dossier "back" sous le nom **Alen.postman_collection.json**.
 
@@ -44,7 +44,7 @@ Le fichier Postman est disponible dans le dossier "back" sous le nom **Alen.post
 
 |               | exemple                                  | commentaire                                           |
 |---------------|------------------------------------------|-------------------------------------------------------|
-| HTTP Request  | **GET** {host}/products/{productID}      | Récupère le produit qui a l'id donné pour le modifier |
+| HTTP Request  | **PATCH** {host}/products/{productID}    | Récupère le produit qui a l'id donné pour le modifier |
 | Request Body  | ![Body test](images/body_test_patch.png) |                                                       |
 | HTTP Response | 200 - OK                                 | La requête a réussi                                   |
 | HTTP Response | 404 - Not Found                          | L'id n'est pas connu de la base de donnée             |
